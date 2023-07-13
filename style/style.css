@@ -207,6 +207,11 @@ a {
     hr{
         display: none;
     }
+    .youtubepage>.mainpage>.rightside>.videosection{
+        display: grid;
+        grid-template-columns: repeat(3, 27%);
+        grid-gap: 20px 40px;
+    }
 }
 @media(max-width:1140px){
     .youtubepage>header>.icons{
@@ -216,8 +221,8 @@ a {
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(4, 23%);
-        grid-gap: 20px 30px;
+        grid-template-columns: repeat(3, 23%);
+        grid-gap: 20px 50px;
     }
 }
 @media(max-width:992px){
@@ -266,7 +271,7 @@ a {
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(3, 30%);
+        grid-template-columns: repeat(3, 20%);
         grid-gap: 20px 40px;
     }
 }
@@ -319,7 +324,7 @@ a {
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(3, 30%);
+        grid-template-columns: repeat(2, 33%);
         grid-gap: 20px 40px;
     }
 }
@@ -368,7 +373,7 @@ a {
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(3, 31%);
+        grid-template-columns: repeat(2, 30%);
         grid-gap: 20px 30px;
     }
 }
@@ -423,7 +428,7 @@ a {
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(2, 45%);
+        grid-template-columns: repeat(1, 45%);
         grid-gap: 20px 50px;
     }
     .youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail{
