@@ -141,8 +141,8 @@ body{
 }
 .youtubepage>.mainpage>.rightside>.videosection{
     display: grid;
-    grid-template-columns: repeat(4, 24%);
-    grid-gap: 15px;
+    grid-template-columns: repeat(4, 21%);
+    grid-gap: 20px 40px;
 }
 .youtubepage>.mainpage>.rightside>.videosection>.videocontainer{
     display: flex;
@@ -186,6 +186,11 @@ a {
         display: flex;
         flex-direction: row;
         gap: 20px;
+    }
+    .youtubepage>.mainpage>.rightside>.videosection{
+        display: grid;
+        grid-template-columns: repeat(4, 19%);
+        grid-gap: 20px 30px;
     }
 }
 @media(max-width:1200px){
@@ -391,9 +396,6 @@ a {
     }
     .youtubepage>header>.icons>.icon1>.inputsearch>.input{
         display: none;
-    }
-    .youtubepage>header>.icons>.icon1>.inputsearch>button{
-        /* display: none; */
     }
     .youtubepage>header>.icons>.icon1>.inputsearch>.button>.material-symbols-outlined{
         font-size: 20px;
