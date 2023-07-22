@@ -12,9 +12,11 @@ body{
 .youtubepage>header>.icons{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 280px;
+
 }
-.youtubepage>header>.icons>.icon1>.inputsearch>.input{
+.youtubepage>header>.icons>.icon2>.inputsearch>.input{
     width: 600px;
     height: 40px;
     border-radius: 18px;
@@ -31,35 +33,37 @@ body{
 }
 .youtubepage>header>.icons>.icon1>.material-symbols-outlined{
     font-size: 40px;
+    right: 200px;
 }
 .youtubepage>header>.icons>.inputsearch{
     display: flex;
     flex-direction: row;
+    left: 100px;
     position: relative;
 }
-.youtubepage>header>.icons>.icon1>.inputsearch>.button{
+.youtubepage>header>.icons>.icon2>.inputsearch>.button{
     position: absolute;
     height: 40px;
     width: 90px;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    left: 720px;
+    left: 980px;
 }
-.youtubepage>header>.icons>.icon2{
+.youtubepage>header>.icons>.icon3{
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-.youtubepage>header>.icons>.icon2>.material-symbols-outlined{
+.youtubepage>header>.icons>.icon3>.material-symbols-outlined{
     font-size: 40px;
 }
-.youtubepage>header>.icons>.icon2>.mailicon{
+.youtubepage>header>.icons>.icon3>.mailicon{
     height: 32px;
     width: 32px;
     border-radius: 50%;
     background-color: rgba(1, 75, 1, 0.79);
 }
-.youtubepage>header>.icons>.icon2>#search{
+.youtubepage>header>.icons>.icon3>#search{
     display: none;
 }
 .youtubepage>.mainpage{
@@ -81,7 +85,7 @@ body{
     border-radius: 50%;
 }
 .youtubepage>.mainpage>.leftside>ul>li>p{
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Roboto","Arial",sans-serif;
 }
 .youtubepage>.mainpage>.leftside>ul>li>.links>.material-symbols-outlined{
@@ -94,10 +98,16 @@ body{
     font-size: 20px;
     font-weight: 500;
 }
+.youtubepage>.mainpage>.leftside>ul>li:hover{
+    background-color: darkgrey;
+}
 .youtubepage>.mainpage>.leftside>.historyy>ul>li{
     display: flex;
     flex-direction: row;
     gap: 15px;
+}
+.youtubepage>.mainpage>.leftside>.historyy>ul>li:hover{
+    background-color: darkgrey;
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li>.links>.img{
     height: 40px;
@@ -105,7 +115,7 @@ body{
     border-radius: 50%;
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li>p{
-    font-size: 20px;
+    font-size: 17px;
     font-family: "Roboto","Arial",sans-serif;
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li>.links>.material-symbols-outlined{
@@ -131,6 +141,9 @@ body{
     border-radius:15px;
     border-style: solid;
     border-color: lightgray;
+}
+.youtubepage>.mainpage>.rightside>.navbar>button:hover{
+    background-color: lightgrey;
 }
 .youtubepage>.mainpage>.rightside>.navbar>.links{
     overflow: hidden;
@@ -181,7 +194,55 @@ a {
     margin-top: 10px;
 }
 
+@media(max-width:1495px){
+    .youtubepage>header>.icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 200px;
+    }
+}
+@media(max-width:1370px){
+    .youtubepage>header>.icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 180px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 550px;
+        height: 40px;
+        border-radius: 18px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 900px;
+    }
+}
 @media(max-width:1300px){
+    .youtubepage>header>.icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 150px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 520px;
+        height: 40px;
+        border-radius: 18px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 880px;
+    }
     .youtubepage>.mainpage>.leftside>ul>li{
         display: flex;
         flex-direction: row;
@@ -193,11 +254,46 @@ a {
         grid-gap: 20px 30px;
     }
 }
+@media(max-width:1260px){
+    .youtubepage>header>.icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 120px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 500px;
+        height: 40px;
+        border-radius: 18px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 820px;
+    }
+}
 @media(max-width:1200px){
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 110px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 450px;
+        height: 40px;
+        border-radius: 18px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 780px;
     }
     .youtubepage>.mainpage>.leftside>ul>li{
         display: flex;
@@ -222,7 +318,47 @@ a {
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 100px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 400px;
+        height: 40px;
+        border-radius: 18px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 720px;
+    }
+    .youtubepage>.mainpage>.rightside>.videosection{
+        display: grid;
+        grid-template-columns: repeat(3, 23%);
+        grid-gap: 20px 50px;
+    }
+}
+@media(max-width:1050px){
+    .youtubepage>header>.icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 90px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 350px;
+        height: 40px;
+        border-radius: 18px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 640px;
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
@@ -234,7 +370,8 @@ a {
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 70px;
     }
     .youtubepage>header>.icons>.icon1{
         display: flex;
@@ -242,18 +379,18 @@ a {
         justify-content: flex-start;
         gap: 25px;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.input{
-        width: 500px;
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 300px;
         height: 40px;
         border-radius: 18px;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.button{
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
         position: absolute;
         height: 40px;
         width: 70px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 600px;
+        left: 570px;
     }
     .youtubepage>header>.icons>.icon1>.ytd-logo{
         height: 30px;
@@ -280,33 +417,49 @@ a {
         grid-gap: 20px 40px;
     }
 }
-@media(max-width:757px){
+@media(max-width:880px){
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 70px;
     }
-    .youtubepage>header>.icons>.icon1{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 20px;
-    }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.input{
-        width: 400px;
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 250px;
         height: 40px;
         border-radius: 18px;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.button{
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 490px;
+    }
+}
+@media(max-width:780px){
+    .youtubepage>header>.icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 200px;
+        height: 40px;
+        border-radius: 18px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
         position: absolute;
         height: 40px;
         width: 50px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 500px;
+        left: 420px;
     }
     .youtubepage>header>.icons>.icon1>.ytd-logo{
-        height: 25px;
+        height: 35px;
         width: 60px;
     }
     .youtubepage>header>.icons>.icon1>.inputsearch>.button>.material-symbols-outlined{
@@ -333,11 +486,12 @@ a {
         grid-gap: 20px 40px;
     }
 }
-@media(max-width:617px){
+@media(max-width:710px){
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 60px;
     }
     .youtubepage>header>.icons>.icon1{
         display: flex;
@@ -345,29 +499,29 @@ a {
         justify-content: flex-start;
         gap: 15px;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.input{
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
         display: none;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.button{
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
         display: none;
     }
     .youtubepage>header>.icons>.icon1>.ytd-logo{
         height: 20px;
         width: 60px;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.button>.material-symbols-outlined{
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button>.material-symbols-outlined{
         font-size: 25px;
     }
     .youtubepage>header>.icons>.icon1>.material-symbols-outlined{
         font-size: 25px;
     }
-    .youtubepage>header>.icons>.icon2>.material-symbols-outlined{
+    .youtubepage>header>.icons>.icon3>.material-symbols-outlined{
         font-size: 20px;
     }
-    .youtubepage>header>.icons>.icon2>#search{
+    .youtubepage>header>.icons>.icon3>#search{
         display: flex;
     }
-    .youtubepage>header>.icons>.icon2>.mailicon{
+    .youtubepage>header>.icons>.icon3>.mailicon{
         height: 20px;
         width: 20px;
         border-radius: 50%;
@@ -394,40 +548,31 @@ a {
         justify-content: flex-start;
         gap: 15px;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.input{
-        display: none;
-    }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.button>.material-symbols-outlined{
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button>.material-symbols-outlined{
         font-size: 20px;
     }
     .youtubepage>header>.icons>.icon1>.ytd-logo{
         height: 20px;
         width: 60px;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.button>.material-symbols-outlined{
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button>.material-symbols-outlined{
         font-size: 25px;
     }
     .youtubepage>header>.icons>.icon1>.material-symbols-outlined{
         font-size: 25px;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.input{
-        display: none;
-    }
-    .youtubepage>header>.icons>.icon1>.inputsearch>button{
-        display: none;
-    }
-    .youtubepage>header>.icons>.icon2>.material-symbols-outlined{
+    .youtubepage>header>.icons>.icon3>.material-symbols-outlined{
         font-size: 20px;
     }
-    .youtubepage>header>.icons>.icon2>.mailicon{
+    /* .youtubepage>header>.icons>.icon3>.mailicon{
         height: 20px;
         width: 20px;
         border-radius: 50%;
         background-color: rgb(1, 53, 1);
-    }
-    .youtubepage>header>.icons>.icon2>#search{
+    } */
+    /* .youtubepage>header>.icons>.icon3>#search{
         display: flex;
-    }
+    } */
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
         grid-template-columns: repeat(1, 45%);
