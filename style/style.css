@@ -564,15 +564,6 @@ a {
     .youtubepage>header>.icons>.icon3>.material-symbols-outlined{
         font-size: 20px;
     }
-    /* .youtubepage>header>.icons>.icon3>.mailicon{
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: rgb(1, 53, 1);
-    } */
-    /* .youtubepage>header>.icons>.icon3>#search{
-        display: flex;
-    } */
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
         grid-template-columns: repeat(1, 45%);
