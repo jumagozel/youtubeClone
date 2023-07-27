@@ -20,27 +20,31 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 10px;
 }
 .youtubepage>header>.icons>.icon1>.ytd-logo{
-    height: 40px;
-    width: 100px;
+    height: 20px;
+    width: 130px;
 }
 .youtubepage>header>.icons>.icon1>.material-symbols-outlined{
-    font-size: 40px;
-    right: 200px;
+    font-size: 28px;
 }
 .youtubepage>header>.icons>.inputsearch{
     display: flex;
     flex-direction: row;
     left: 100px;
     position: relative;
+    gap: 100px;
+}
+.youtubepage>header>.icons>.inputsearch>span>#mic{
+    margin: 10px;
 }
 .youtubepage>header>.icons>.icon2>.inputsearch>.input{
     width: 600px;
     height: 40px;
     border: 1px solid darkgrey;
     border-radius: 18px;
+    padding: 15px;
 }
 .youtubepage>header>.icons>.icon2>.inputsearch>.button{
     position: absolute;
@@ -48,7 +52,7 @@ body{
     width: 90px;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    left: 980px;
+    left: 990px;
     border: 1px solid darkgrey;
 }
 .youtubepage>header>.icons>.icon3{
@@ -57,11 +61,11 @@ body{
     gap: 20px;
 }
 .youtubepage>header>.icons>.icon3>.material-symbols-outlined{
-    font-size: 40px;
+    font-size: 30px;
 }
 .youtubepage>header>.icons>.icon3>.mailicon{
-    height: 32px;
-    width: 32px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     background-color: rgba(1, 75, 1, 0.79);
 }
@@ -87,11 +91,11 @@ body{
     border-radius: 50%;
 }
 .youtubepage>.mainpage>.leftside>ul>li>p{
-    font-size: 18px;
+    font-size: 15px;
     font-family: "Roboto","Arial",sans-serif;
 }
 .youtubepage>.mainpage>.leftside>ul>li>.links>.material-symbols-outlined{
-    font-size: 30px;
+    font-size: 20px;
 }
 .youtubepage>.mainpage>.leftside>ul>li>a{
     text-decoration:none;
@@ -101,7 +105,12 @@ body{
     font-weight: 500;
 }
 .youtubepage>.mainpage>.leftside>ul>li:hover{
-    background-color: darkgrey;
+    background-color: rgb(228, 228, 228);
+}
+.youtubepage>.mainpage>.leftside>ul>li{
+    transition-property: all;
+    transition-duration: 1s;
+    cursor: pointer;
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li{
     display: flex;
@@ -109,7 +118,12 @@ body{
     gap: 15px;
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li:hover{
-    background-color: darkgrey;
+    background-color: rgb(228, 228, 228);
+}
+.youtubepage>.mainpage>.leftside>.historyy>ul>li{
+    transition-property: all;
+    transition-duration: 1s;
+    cursor: pointer;
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li>.links>.img{
     height: 40px;
@@ -117,11 +131,14 @@ body{
     border-radius: 50%;
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li>p{
-    font-size: 17px;
+    font-size: 15px;
     font-family: "Roboto","Arial",sans-serif;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li>.links>.material-symbols-outlined{
-    font-size: 30px;
+    font-size: 20px;
 }
 .youtubepage>.mainpage>.rightside{
     margin-left: 20px;
@@ -134,7 +151,6 @@ body{
     gap: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
-    /* word-wrap: none; */
 }
 .youtubepage>.mainpage>.rightside>.navbar>button{
     color: black;
@@ -143,13 +159,19 @@ body{
     font-weight: 300;
     padding: 5px 15px;
     border-radius:15px;
-    border-style: solid;
-    border-color: lightgray;
-    /* word-wrap: initial; */
+    border-style: none;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .youtubepage>.mainpage>.rightside>.navbar>button:hover{
-    background-color: lightgrey;
+    background-color: rgb(228, 228, 228);
 }
+.youtubepage>.mainpage>.rightside>.navbar>button{
+    transition-property: all;
+    transition-duration: 1s; 
+    cursor: pointer;
+ }
 .youtubepage>.mainpage>.rightside>.navbar>.links{
     overflow: hidden;
     word-wrap: none;
