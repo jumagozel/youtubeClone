@@ -12,7 +12,8 @@ body{
 .youtubepage>header>.icons{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between;
     gap: 250px;
 
 }
@@ -32,6 +33,8 @@ body{
 .youtubepage>header>.icons>.icon2{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
     gap: 60px;
 }
 .youtubepage>header>.icons>.inputsearch{
@@ -39,7 +42,7 @@ body{
     flex-direction: row;
     left: 100px;
     position: relative;
-    /* gap: 50px; */
+    gap: 50px;
 }
 .youtubepage>header>.icons>.icon2>.inputsearch>.input{
     width: 600px;
