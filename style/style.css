@@ -12,7 +12,6 @@ body{
 .youtubepage>header>.icons{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     justify-content: space-between;
     gap: 250px;
 
@@ -37,6 +36,22 @@ body{
     width: 100%;
     gap: 60px;
 }
+#mic{
+    margin-top: 4px;
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(242, 240, 240);
+    text-align: center;
+    align-items: center;
+    font-size: 32px;
+}
+#mic:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+    transition: 0.50s;
+} 
 .youtubepage>header>.icons>.inputsearch{
     display: flex;
     flex-direction: row;
@@ -117,7 +132,7 @@ body{
 }
 .youtubepage>.mainpage>.leftside>ul>li{
     transition-property: all;
-    transition-duration: 0.80s;
+    transition-duration: 0.50s;
     cursor: pointer;
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li{
@@ -147,6 +162,34 @@ body{
 }
 .youtubepage>.mainpage>.leftside>.historyy>ul>li>.links>.material-symbols-outlined{
     font-size: 20px;
+}
+.kesfet{
+    font-size: 14px;
+    font-family: "Roboto","Arial",sans-serif;
+}
+.youtubepremium{
+    width: 50px;
+}
+.youtubeicon{
+    width: 30px;
+    margin-right: 20px;
+}
+.youtubekids{
+    width: 60px;
+}
+.youtubepage>.mainpage>.leftside>.reklam>.hakkinda{
+    line-height: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: "Roboto","Arial",sans-serif;
+}
+.youtubepage>.mainpage>.leftside>.reklam>.LLC{
+    line-height: 20px;
+    margin-top: 15px;
+    color: rgb(144, 144, 144);
+    font-size: 14px;
+    font-family: "Roboto","Arial",sans-serif;
+
 }
 .youtubepage>.mainpage>.rightside{
     margin-left: 20px;
