@@ -7,13 +7,21 @@ body{
     margin: 0;
 }
 .youtubepage{
-    margin: 10px;
+    margin: 0 10px 10px 10px;
+    max-width: 100%;
+}
+.youtubepage>header{
+    max-width: 100%;
+    position: fixed;
+    height: 80px;
+    background-color: white;
 }
 .youtubepage>header>.icons{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 250px;
+    margin-top: 10px;
 
 }
 .youtubepage>header>.icons>.icon1{
@@ -21,6 +29,7 @@ body{
     flex-direction: row;
     justify-content: flex-start;
     gap: 10px;
+    margin-top: 10px;
 }
 .youtubepage>header>.icons>.icon1>.ytd-logo{
     height: 20px;
@@ -83,7 +92,6 @@ body{
     margin-right: 10px;
 }
 .youtubepage>header>.icons>.icon3>.material-symbols-outlined{
-    /* width: 50px; */
     font-size: 30px;
 }
 .youtubepage>header>.icons>.icon3>.mailicon{
@@ -96,12 +104,26 @@ body{
     display: none;
 }
 .youtubepage>.mainpage{
+    max-width: 100%;
     display: flex;
-    flex-direction: inherit;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .youtubepage>.mainpage>.leftside{
     width: 300px;
     line-height: 55px;
+    margin-top: 100px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* position: fixed; */
+}
+.youtubepage>.mainpage>.leftside:hover{
+    width: 300px;
+    line-height: 55px;
+    margin-top: 100px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* position: fixed;  */
 }
 .youtubepage>.mainpage>.leftside>ul>li{
     display: flex;
@@ -191,15 +213,17 @@ body{
     font-family: "Roboto","Arial",sans-serif;
 
 }
+
 .youtubepage>.mainpage>.rightside{
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 100px;
 }
 .youtubepage>.mainpage>.rightside>.navbar{
-    max-width: 100%;
+    max-width: 90%;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -276,15 +300,28 @@ a {
     margin-top: 10px;
 }
 
-@media(max-width:1495px){
+@media(max-width:1500px){
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 200px;
+        gap: 250px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 70px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 950px;
+    }
+    .youtubepage>.mainpage>.rightside>.videosection{
+        display: grid;
+        grid-template-columns: repeat(4, 21%);
+        grid-gap: 20px 60px;
     }
 }
-@media(max-width:1370px){
+@media(max-width:1395px){
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
@@ -302,7 +339,21 @@ a {
         width: 70px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 900px;
+        left: 860px;
+    }
+    .youtubepage>.mainpage>.rightside>.navbar{
+        max-width: 90%;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .youtubepage>.mainpage>.rightside>.videosection{
+        display: grid;
+        grid-template-columns: repeat(4, 19%);
+        grid-gap: 20px 40px;
     }
 }
 @media(max-width:1300px){
@@ -323,7 +374,7 @@ a {
         width: 70px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 880px;
+        left: 800px;
     }
     .youtubepage>.mainpage>.leftside>ul>li{
         display: flex;
@@ -332,8 +383,8 @@ a {
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(4, 19%);
-        grid-gap: 20px 30px;
+        grid-template-columns: repeat(3, 27%);
+        grid-gap: 20px 60px;
     }
 }
 @media(max-width:1260px){
@@ -354,7 +405,12 @@ a {
         width: 70px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 820px;
+        left: 770px;
+    }
+    .youtubepage>.mainpage>.rightside>.videosection{
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        grid-gap: 20px 60px;
     }
 }
 @media(max-width:1200px){
@@ -375,7 +431,13 @@ a {
         width: 70px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 780px;
+        left: 660px;
+    }
+    .youtubepage>.mainpage>.leftside{
+        width: 100px;
+        line-height: 25px;
+        margin-top: 100px;
+        position:fixed;
     }
     .youtubepage>.mainpage>.leftside>ul>li{
         display: flex;
@@ -383,12 +445,23 @@ a {
         gap: 5px;
         padding: 15px;
         line-height: 25px;
+        justify-content: flex-start;
+        align-items: center;
+       
     }
     .youtubepage>.mainpage>.leftside>.historyy{
         display: none;
     }
+    .youtubepage>.mainpage>.leftside>.reklam{
+        display: none;
+    }
     hr{
         display: none;
+    }
+    .youtubepage>.mainpage>.rightside{
+        margin-left: 150px;
+        margin-right: 20px;
+        margin-top: 100px;
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
@@ -396,7 +469,7 @@ a {
         grid-gap: 20px 40px;
     }
 }
-@media(max-width:1140px){
+@media(max-width:1150px){
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
@@ -414,12 +487,12 @@ a {
         width: 70px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 720px;
+        left: 600px;
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
         grid-template-columns: repeat(3, 23%);
-        grid-gap: 20px 50px;
+        grid-gap: 20px 70px;
     }
 }
 @media(max-width:1050px){
@@ -440,12 +513,12 @@ a {
         width: 70px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 640px;
+        left: 550px;
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
         grid-template-columns: repeat(3, 23%);
-        grid-gap: 20px 50px;
+        grid-gap: 20px 30px;
     }
 }
 @media(max-width:992px){
@@ -472,7 +545,7 @@ a {
         width: 70px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 570px;
+        left: 450px;
     }
     .youtubepage>header>.icons>.icon1>.ytd-logo{
         height: 30px;
@@ -495,8 +568,8 @@ a {
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(3, 20%);
-        grid-gap: 20px 40px;
+        grid-template-columns: repeat(2, 27%);
+        grid-gap: 20px 90px;
     }
 }
 @media(max-width:880px){
@@ -517,7 +590,12 @@ a {
         width: 70px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 490px;
+        left: 435px;
+    }
+    .youtubepage>.mainpage>.rightside>.videosection{
+        display: grid;
+        grid-template-columns: repeat(2, 27%);
+        grid-gap: 20px 60px;
     }
 }
 @media(max-width:780px){
@@ -538,7 +616,7 @@ a {
         width: 50px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 420px;
+        left: 310px;
     }
     .youtubepage>header>.icons>.icon1>.ytd-logo{
         height: 35px;
@@ -564,7 +642,7 @@ a {
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(2, 33%);
+        grid-template-columns: repeat(2, 22%);
         grid-gap: 20px 40px;
     }
 }
@@ -585,6 +663,9 @@ a {
         display: none;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        display: none;
+    }
+    .youtubepage>header>.icons>.icon2>.mic{
         display: none;
     }
     .youtubepage>header>.icons>.icon1>.ytd-logo{
@@ -612,10 +693,13 @@ a {
     .youtubepage>.mainpage>.leftside>ul>li>p{
        display: none;
     }
+    .youtubepage>.mainpage>.rightside{
+        margin-left: 15px;
+    }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(2, 30%);
-        grid-gap: 20px 30px;
+        grid-template-columns: repeat(1, 30%);
+        grid-gap: 20px 60px;
     }
 }
 @media(max-width:455px){
@@ -648,8 +732,8 @@ a {
     }
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(1, 45%);
-        grid-gap: 20px 50px;
+        grid-template-columns: repeat(1, 27%);
+        grid-gap: 20px 90px;
     }
     .youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail{
         width: 300px;
@@ -660,16 +744,19 @@ a {
 @media(max-width:400px){
     .youtubepage>.mainpage>.rightside>.videosection{
         display: grid;
-        grid-template-columns: repeat(1, 75%);
+        grid-template-columns: repeat(1, 30%);
         grid-gap: 20px 50px;
     }
     .youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail>.channelname{
         display: block;
-        font-size: 35px;
+        font-size: 14px;
         color: darkgray;
     }
+    .youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail{
+        font-size: 14px;
+    }
     .youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail>.videoview{
-        font-size: 30px;
+        font-size: 14px;
         color: darkgray;
     }
 }
