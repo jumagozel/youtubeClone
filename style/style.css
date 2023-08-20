@@ -7,61 +7,41 @@ body{
     margin: 0;
 }
 .youtubepage{
-    margin: 0 10px 10px 10px;
     max-width: 100%;
+    margin: 0 10px 10px 10px;
 }
 .youtubepage>header{
-    max-width: 100%;
-    position: fixed;
+    width: 99%;
     height: 80px;
+    position: fixed;
     background-color: white;
 }
 .youtubepage>header>.icons{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 250px;
+    justify-content: center;
+    gap: 200px;
     margin-top: 10px;
-
 }
 .youtubepage>header>.icons>.icon1{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 30px;
 }
-.youtubepage>header>.icons>.icon1>.ytd-logo{
-    height: 20px;
-    width: 130px;
-}
-.youtubepage>header>.icons>.icon1>.material-symbols-outlined{
-    font-size: 28px;
+.youtubepage>header>.icons>.icon1>img{
+   width: 100px;
+   height: 25px; 
 }
 .youtubepage>header>.icons>.icon2{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    gap: 60px;
+    gap: 100px;
+    margin-top: 10px;
 }
-#mic{
-    margin-top: 4px;
-    margin-left: 20px;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: rgb(242, 240, 240);
-    text-align: center;
-    align-items: center;
-    font-size: 32px;
-}
-#mic:hover{
-    background-color: rgb(228, 228, 228);
-    cursor: pointer;
-    transition: 0.50s;
-} 
-.youtubepage>header>.icons>.inputsearch{
+.youtubepage>header>.icons>.icon2>.inputsearch{
     display: flex;
     flex-direction: row;
     left: 100px;
@@ -81,15 +61,31 @@ body{
     width: 90px;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
-    left: 1000px;
+    left: 510px;
     border: 1px solid darkgrey;
 }
+#mic{
+    margin-top: 4px;
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(242, 240, 240);
+    text-align: center;
+    align-items: center;
+    font-size: 32px;
+}
+#mic:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer;
+    transition: 0.50s;
+} 
 .youtubepage>header>.icons>.icon3{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 20px;
-    margin-right: 10px;
+    margin-top:10px;
 }
 .youtubepage>header>.icons>.icon3>.material-symbols-outlined{
     font-size: 30px;
@@ -103,86 +99,83 @@ body{
 .youtubepage>header>.icons>.icon3>#search{
     display: none;
 }
-.youtubepage>.mainpage{
-    max-width: 100%;
+.youtubepage>.sides{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
 }
-.youtubepage>.mainpage>.leftside{
-    width: 300px;
-    line-height: 55px;
-    margin-top: 100px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    /* position: fixed; */
+.youtubepage>.sides>.leftside{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.youtubepage>.mainpage>.leftside:hover{
-    width: 300px;
-    line-height: 55px;
-    margin-top: 100px;
+.youtubepage>.sides>.leftside:hover{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
-    /* position: fixed;  */
 }
-.youtubepage>.mainpage>.leftside>ul>li{
+.youtubepage>.sides>.leftside>.channels{
+    margin-top: 100px;
+}
+.youtubepage>.sides>.leftside>.channels>.home>ul>li{
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    justify-content: flex-start;
+    gap: 15px;
+    line-height: 45px;
 }
-.youtubepage>.mainpage>.leftside>ul>li>.links>.img{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
-.youtubepage>.mainpage>.leftside>ul>li>p{
-    font-size: 14px;
-    font-family: "Roboto","Arial",sans-serif;
-}
-.youtubepage>.mainpage>.leftside>ul>li>.links>.material-symbols-outlined{
+.youtubepage>.sides>.leftside>.channels>.home>ul>li>.links>.material-symbols-outlined{
     font-size: 20px;
 }
-.youtubepage>.mainpage>.leftside>ul>li>a{
+.youtubepage>.sides>.leftside>.channels>.home>ul>li>a{
     text-decoration:none;
     color: black;
     font-family: "Roboto","Arial",sans-serif;
     font-size: 20px;
     font-weight: 500;
 }
-.youtubepage>.mainpage>.leftside>ul>li:hover{
+.youtubepage>.sides>.leftside>.channels>.home>ul>li:hover{
     background-color: rgb(228, 228, 228);
 }
-.youtubepage>.mainpage>.leftside>ul>li{
+.youtubepage>.sides>.leftside>.channels>.home>ul>li{
     transition-property: all;
     transition-duration: 0.50s;
     cursor: pointer;
 }
-.youtubepage>.mainpage>.leftside>.historyy>ul>li{
+.youtubepage>.sides>.leftside>.channels>.historyy>ul>li{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     gap: 15px;
+    line-height: 45px;
 }
-.youtubepage>.mainpage>.leftside>.historyy>ul>li:hover{
+.youtubepage>.sides>.leftside>.channels>.historyy>ul>li:hover{
     background-color: rgb(228, 228, 228);
 }
-.youtubepage>.mainpage>.leftside>.historyy>ul>li{
+.youtubepage>.sides>.leftside>.channels>.historyy>ul>li{
     transition-property: all;
     transition-duration: 0.50s;
     cursor: pointer;
 }
-.youtubepage>.mainpage>.leftside>.historyy>ul>li>.links>.img{
+.youtubepage>.sides>.leftside>.channels>.historyy>ul>li>.links>.img{
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
-.youtubepage>.mainpage>.leftside>.historyy>ul>li>p{
+.youtubepage>.sides>.leftside>.channels>.historyy>ul>li>p{
     font-size: 14px;
     font-family: "Roboto","Arial",sans-serif;
     text-overflow: clip;
     overflow: hidden;
     white-space: nowrap;
 }
-.youtubepage>.mainpage>.leftside>.historyy>ul>li>.links>.material-symbols-outlined{
+.youtubepage>.sides>.leftside>.channels>.historyy>ul>li>.links>.material-symbols-outlined{
     font-size: 20px;
 }
 .kesfet{
@@ -199,35 +192,34 @@ body{
 .youtubekids{
     width: 60px;
 }
-.youtubepage>.mainpage>.leftside>.reklam>.hakkinda{
+.youtubepage>.sides>.leftside>.channels>.reklam>.hakkinda{
     line-height: 20px;
     margin-top: 15px;
     font-size: 14px;
     font-family: "Roboto","Arial",sans-serif;
 }
-.youtubepage>.mainpage>.leftside>.reklam>.LLC{
+.youtubepage>.sides>.leftside>.channels>.reklam>.LLC{
     line-height: 20px;
     margin-top: 15px;
     color: rgb(144, 144, 144);
     font-size: 14px;
     font-family: "Roboto","Arial",sans-serif;
-
 }
-
-.youtubepage>.mainpage>.rightside{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 100px;
+.youtubepage>.sides>.rightside{
+    width: 85%;
 }
-.youtubepage>.mainpage>.rightside>.navbar{
-    max-width: 90%;
+.youtubepage>.sides>.rightside>.navbar{
+    margin-top: 80px;
+    /* max-width: 1400px; */
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    justify-content: flex-start;
+    gap: 31px;
+    background-color: white;
+    position: fixed;
     margin-bottom: 10px;
-    margin-top: 10px;
 }
-.youtubepage>.mainpage>.rightside>.navbar>button{
+.youtubepage>.sides>.rightside>.navbar>button{
     color: black;
     font-family: "Roboto","Arial",sans-serif;
     font-size: 14px;
@@ -236,43 +228,45 @@ body{
     border-radius:15px;
     border-style: none;
     text-overflow: clip;
-    overflow: hidden;
     white-space: nowrap;
 }
-.youtubepage>.mainpage>.rightside>.navbar>button:hover{
+.youtubepage>.sides>.rightside>.navbar>button:hover{
     background-color: rgb(228, 228, 228);
 }
-.youtubepage>.mainpage>.rightside>.navbar>button{
+.youtubepage>.sides>.rightside>.navbar>button{
     transition-property: all;
     transition-duration: 0.50s; 
     cursor: pointer;
  }
-.youtubepage>.mainpage>.rightside>.navbar>.links{
+.youtubepage>.sides>.rightside>.navbar>.links{
     overflow: hidden;
     word-wrap: none;
-} 
-.youtubepage>.mainpage>.rightside>.navbar>.links-all.active{
+}
+.youtubepage>.sides>.rightside>.navbar>.links-all.active{
     background-color: rgb(0, 21, 0);
     color: white;
 }
-.youtubepage>.mainpage>.rightside>.videosection{
+.youtubepage>.sides>.rightside>.mainpage{
+    margin-top: 130px;
+}
+.youtubepage>.sides>.rightside>.mainpage>.videosection{
     display: grid;
-    grid-template-columns: repeat(4, 21%);
+    grid-template-columns: repeat(4, 22%);
     grid-gap: 20px 40px;
 }
-.youtubepage>.mainpage>.rightside>.videosection>.videocontainer{
+.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer{
     display: flex;
     flex-direction: column;
 }
-.youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.title>.titleimage{
+.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.title>.titleimage{
     width: 100%;
 }
-.youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom{
+.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom{
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-.youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail{
+.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom>.videodetail{
     width: 220px;
     margin-top: 10px;
     font-size: 14px;
@@ -282,43 +276,30 @@ a {
     text-decoration: none;
     color: black; 
 }
-.youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail>.channelname{
+.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom>.videodetail>.channelname{
     display: block;
     font-size: 14px;
     color: darkgray;
     font-family: "Roboto","Arial",sans-serif;
 }
-.youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail>.videoview{
+.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom>.videodetail>.videoview{
     font-size: 14px;
     color: darkgray;
     font-family: "Roboto","Arial",sans-serif;
 }
-.youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videoimg>a>.channelicon {
+.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom>.videoimg>a>.channelicon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-top: 10px;
 }
-
 @media(max-width:1500px){
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 250px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
-        position: absolute;
-        height: 40px;
-        width: 70px;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        left: 950px;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection{
-        display: grid;
-        grid-template-columns: repeat(4, 21%);
-        grid-gap: 20px 60px;
+        gap: 160px;
+        margin-top: 10px;
     }
 }
 @media(max-width:1395px){
@@ -326,33 +307,15 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 180px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 550px;
-        height: 40px;
-        border-radius: 18px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
-        position: absolute;
-        height: 40px;
-        width: 70px;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        left: 860px;
-    }
-    .youtubepage>.mainpage>.rightside>.navbar{
-        max-width: 90%;
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        margin-bottom: 10px;
+        gap: 120px;
         margin-top: 10px;
-        overflow: hidden;
     }
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.rightside{
+        width: 85%;
+    }
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(4, 19%);
+        grid-template-columns: repeat(4, 22%);
         grid-gap: 20px 40px;
     }
 }
@@ -361,30 +324,39 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 150px;
+        gap: 100px;
+        margin-top: 10px;
+    }
+    .youtubepage>header>.icons>.icon1{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .youtubepage>.sides>.rightside{
+        width: 85%;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 520px;
+        width: 500px;
         height: 40px;
+        border: 1px solid darkgrey;
         border-radius: 18px;
+        padding: 15px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.button{
         position: absolute;
         height: 40px;
-        width: 70px;
+        width: 90px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 800px;
+        left: 410px;
+        border: 1px solid darkgrey;
     }
-    .youtubepage>.mainpage>.leftside>ul>li{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(3, 27%);
-        grid-gap: 20px 60px;
+        grid-template-columns: repeat(4, 21%);
+        grid-gap: 20px 40px;
     }
 }
 @media(max-width:1260px){
@@ -392,25 +364,36 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 120px;
+        gap: 100px;
+        margin-top: 10px;
+    }
+    .youtubepage>header>.icons>.icon1{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 500px;
+        width: 420px;
         height: 40px;
+        border: 1px solid darkgrey;
         border-radius: 18px;
+        padding: 15px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.button{
         position: absolute;
         height: 40px;
-        width: 70px;
+        width: 90px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 770px;
+        left: 330px;
+        border: 1px solid darkgrey;
     }
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(3, 25%);
-        grid-gap: 20px 60px;
+        grid-template-columns: repeat(4, 20%);
+        grid-gap: 20px 40px;
     }
 }
 @media(max-width:1200px){
@@ -418,54 +401,54 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 110px;
+        gap: 100px;
+        margin-top: 10px;
     }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 450px;
-        height: 40px;
-        border-radius: 18px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
-        position: absolute;
-        height: 40px;
-        width: 70px;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        left: 660px;
-    }
-    .youtubepage>.mainpage>.leftside{
-        width: 100px;
-        line-height: 25px;
-        margin-top: 100px;
-        position:fixed;
-    }
-    .youtubepage>.mainpage>.leftside>ul>li{
+    .youtubepage>.sides>.leftside{
+        width: 10%;
         display: flex;
         flex-direction: column;
-        gap: 5px;
-        padding: 15px;
-        line-height: 25px;
-        justify-content: flex-start;
+        gap: 10px;
+    }
+    .youtubepage>.sides>.leftside>.channels>.home>ul>li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-       
-    }
-    .youtubepage>.mainpage>.leftside>.historyy{
-        display: none;
-    }
-    .youtubepage>.mainpage>.leftside>.reklam{
-        display: none;
+        gap: 5px;
+        line-height: 30px;
     }
     hr{
         display: none;
     }
-    .youtubepage>.mainpage>.rightside{
-        margin-left: 150px;
-        margin-right: 20px;
-        margin-top: 100px;
+    .youtubepage>.sides>.leftside>.channels>.historyy{
+        display: none;
     }
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.leftside>.channels>.reklam{
+        display: none;
+    }
+    .youtubepage>.sides>.rightside{
+        width: 85%;
+    }
+   .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 380px;
+        height: 40px;
+        border: 1px solid darkgrey;
+        border-radius: 18px;
+        padding: 15px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 90px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 290px;
+        border: 1px solid darkgrey;
+    }
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(3, 27%);
+        grid-template-columns: repeat(4, 19%);
         grid-gap: 20px 40px;
     }
 }
@@ -475,24 +458,28 @@ a {
         flex-direction: row;
         justify-content: center;
         gap: 100px;
+        margin-top: 10px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 400px;
+        width: 340px;
         height: 40px;
+        border: 1px solid darkgrey;
         border-radius: 18px;
+        padding: 15px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.button{
         position: absolute;
         height: 40px;
-        width: 70px;
+        width: 90px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 600px;
+        left: 250px;
+        border: 1px solid darkgrey;
     }
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(3, 23%);
-        grid-gap: 20px 70px;
+        grid-template-columns: repeat(3, 30%);
+        grid-gap: 20px 40px;
     }
 }
 @media(max-width:1050px){
@@ -500,149 +487,121 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        gap: 100px;
+        margin-top: 10px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+        width: 320px;
+        height: 40px;
+        border: 1px solid darkgrey;
+        border-radius: 18px;
+        padding: 15px;
+    }
+    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+        position: absolute;
+        height: 40px;
+        width: 90px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        left: 230px;
+        border: 1px solid darkgrey;
+    }
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
+        display: grid;
+        grid-template-columns: repeat(3, 31%);
+        grid-gap: 20px 40px;
+    }
+}
+@media(max-width:992px){    
+    .youtubepage>header>.icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         gap: 90px;
+        margin-top: 10px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 350px;
+        width: 290px;
         height: 40px;
+        border: 1px solid darkgrey;
         border-radius: 18px;
+        padding: 15px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.button{
         position: absolute;
         height: 40px;
-        width: 70px;
+        width: 90px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 550px;
+        left: 200px;
+        border: 1px solid darkgrey;
     }
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(3, 23%);
-        grid-gap: 20px 30px;
+        grid-template-columns: repeat(3, 31%);
+        grid-gap: 20px 40px;
     }
 }
-@media(max-width:992px){
+@media(max-width:912px){ 
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 70px;
-    }
-    .youtubepage>header>.icons>.icon1{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 25px;
+        margin-top: 10px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 300px;
+        width: 260px;
         height: 40px;
+        border: 1px solid darkgrey;
         border-radius: 18px;
+        padding: 15px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.button{
         position: absolute;
         height: 40px;
-        width: 70px;
+        width: 90px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 450px;
+        left: 170px;
+        border: 1px solid darkgrey;
     }
-    .youtubepage>header>.icons>.icon1>.ytd-logo{
-        height: 30px;
-        width: 80px;
-    }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.button>.material-symbols-outlined{
-        font-size: 30px;
-    }
-    .youtubepage>header>.icons>.icon1>.material-symbols-outlined{
-        font-size: 30px;
-    }
-    .youtubepage>header>.icons>.icon2>.material-symbols-outlined{
-        font-size: 30px;
-    }
-    .youtubepage>header>.icons>.icon2>.mailicon{
-        height: 28px;
-        width: 28px;
-        border-radius: 50%;
-        background-color: rgb(1, 53, 1);
-    }
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(2, 27%);
-        grid-gap: 20px 90px;
+        grid-template-columns: repeat(3, 31%);
+        grid-gap: 20px 40px;
     }
 }
-@media(max-width:880px){
+@media(max-width:840px){
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 70px;
+        gap: 40px;
+        margin-top: 10px;
     }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 250px;
-        height: 40px;
-        border-radius: 18px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
-        position: absolute;
-        height: 40px;
-        width: 70px;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        left: 435px;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection{
-        display: grid;
-        grid-template-columns: repeat(2, 27%);
-        grid-gap: 20px 60px;
-    }
-}
-@media(max-width:780px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
-    }
+     .youtubepage>.sides>.leftside>.channels{
+        display: none;
+     }  
     .youtubepage>header>.icons>.icon2>.inputsearch>.input{
         width: 200px;
         height: 40px;
+        border: 1px solid darkgrey;
         border-radius: 18px;
+        padding: 15px;
     }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+    .youtubepage>.sides>.rightside>header>.icons>.icon2>.inputsearch>.button{
         position: absolute;
         height: 40px;
-        width: 50px;
+        width: 90px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 310px;
+        left: 110px;
+        border: 1px solid darkgrey;
     }
-    .youtubepage>header>.icons>.icon1>.ytd-logo{
-        height: 35px;
-        width: 60px;
-    }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.button>.material-symbols-outlined{
-        font-size: 25px;
-    }
-    .youtubepage>header>.icons>.icon1>.material-symbols-outlined{
-        font-size: 25px;
-    }
-    .youtubepage>header>.icons>.icon2>.material-symbols-outlined{
-        font-size: 25px;
-    }
-    .youtubepage>header>.icons>.icon2>.mailicon{
-        height: 25px;
-        width: 25px;
-        border-radius: 50%;
-        background-color: rgb(1, 53, 1);
-    }
-    .youtubepage>.mainpage>.leftside>ul>li{
-        display: none;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(2, 22%);
+        grid-template-columns: repeat(2, 40%);
         grid-gap: 20px 40px;
     }
 }
@@ -650,14 +609,9 @@ a {
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        gap: 60px;
-    }
-    .youtubepage>header>.icons>.icon1{
-        display: flex;
-        flex-direction: row;
         justify-content: flex-start;
-        gap: 15px;
+        gap: 100px;
+        margin-top: 10px;
     }
     .youtubepage>header>.icons>.icon2>.inputsearch>.input{
         display: none;
@@ -665,98 +619,43 @@ a {
     .youtubepage>header>.icons>.icon2>.inputsearch>.button{
         display: none;
     }
-    .youtubepage>header>.icons>.icon2>.mic{
+    #mic{
         display: none;
     }
-    .youtubepage>header>.icons>.icon1>.ytd-logo{
-        height: 20px;
-        width: 60px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button>.material-symbols-outlined{
+    .youtubepage>header>.icons>.icon1>.inputsearch>.button>.material-symbols-outlined{
         font-size: 25px;
     }
-    .youtubepage>header>.icons>.icon1>.material-symbols-outlined{
-        font-size: 25px;
-    }
-    .youtubepage>header>.icons>.icon3>.material-symbols-outlined{
-        font-size: 20px;
-    }
-    .youtubepage>header>.icons>.icon3>#search{
-        display: flex;
-    }
-    .youtubepage>header>.icons>.icon3>.mailicon{
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: rgb(1, 53, 1);
-    }
-    .youtubepage>.mainpage>.leftside>ul>li>p{
-       display: none;
-    }
-    .youtubepage>.mainpage>.rightside{
-        margin-left: 15px;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(1, 30%);
-        grid-gap: 20px 60px;
+        grid-template-columns: repeat(2, 35%);
+        grid-gap: 20px 40px;
     }
 }
-@media(max-width:455px){
+@media(max-width:580px){
     .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 70px;
+        margin-top: 10px;
     }
-    .youtubepage>header>.icons>.icon1{
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        grid-gap: 20px 40px;
+    }
+}
+@media(max-width:530px){
+    .youtubepage>header>.icons{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 15px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button>.material-symbols-outlined{
-        font-size: 20px;
-    }
-    .youtubepage>header>.icons>.icon1>.ytd-logo{
-        height: 20px;
-        width: 60px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button>.material-symbols-outlined{
-        font-size: 25px;
-    }
-    .youtubepage>header>.icons>.icon1>.material-symbols-outlined{
-        font-size: 25px;
-    }
-    .youtubepage>header>.icons>.icon3>.material-symbols-outlined{
-        font-size: 20px;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection{
-        display: grid;
-        grid-template-columns: repeat(1, 27%);
-        grid-gap: 20px 90px;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail{
-        width: 300px;
+        gap: 40px;
         margin-top: 10px;
-        font-size: 25px;
     }
-}
-@media(max-width:400px){
-    .youtubepage>.mainpage>.rightside>.videosection{
+    .youtubepage>.sides>.rightside>.mainpage>.videosection{
         display: grid;
-        grid-template-columns: repeat(1, 30%);
-        grid-gap: 20px 50px;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail>.channelname{
-        display: block;
-        font-size: 14px;
-        color: darkgray;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail{
-        font-size: 14px;
-    }
-    .youtubepage>.mainpage>.rightside>.videosection>.videocontainer>.videobottom>.videodetail>.videoview{
-        font-size: 14px;
-        color: darkgray;
+        grid-template-columns: repeat(1, 70%);
+        grid-gap: 20px 40px;
     }
 }
