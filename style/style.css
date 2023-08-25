@@ -6,56 +6,45 @@
 body{
     margin: 0;
 }
-.youtubepage{
-    max-width: 100%;
-    margin: 0 10px 10px 10px;
-}
-.youtubepage>header{
-    width: 99%;
-    height: 80px;
+header{
+    display: flex;
     position: fixed;
+    top: 0%;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 15px;
     background-color: white;
 }
-.youtubepage>header>.icons{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 200px;
-    margin-top: 10px;
-}
-.youtubepage>header>.icons>.icon1{
-    margin-top: 10px;
+header>.icon1{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 10px;
 }
-.youtubepage>header>.icons>.icon1>img{
-   width: 100px;
-   height: 25px; 
+header>.icon1>.material-icons{
+    font-size: 30px;
 }
-.youtubepage>header>.icons>.icon2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 10px;
+header>.icon1>.yticon{
+    width: 100px;
+    height: 25px; 
 }
-.youtubepage>header>.icons>.icon2>.inputsearch{
+header>.search{
     display: flex;
     flex-direction: row;
     left: 100px;
     position: relative;
-    gap: 50px;
+    gap: 30px;
 }
-.youtubepage>header>.icons>.icon2>.inputsearch>.input{
+header>.search>form>input{
     width: 600px;
     height: 40px;
     border: 1px solid darkgrey;
     border-radius: 18px;
     padding: 15px;
 }
-.youtubepage>header>.icons>.icon2>.inputsearch>.button{
+header>.search>form>button{
     position: absolute;
     height: 40px;
     width: 90px;
@@ -75,153 +64,120 @@ body{
     align-items: center;
     font-size: 32px;
 }
-#mic:hover{
-    background-color: rgb(228, 228, 228);
-    cursor: pointer;
-    transition: 0.50s;
-} 
-.youtubepage>header>.icons>.icon3{
+header>.icon2{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 15px;
     margin-top:10px;
 }
-.youtubepage>header>.icons>.icon3>.material-symbols-outlined{
-    font-size: 30px;
-}
-.youtubepage>header>.icons>.icon3>.mailicon{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: rgba(1, 75, 1, 0.79);
-}
-.youtubepage>header>.icons>.icon3>#search{
+header>.icon2>#search{
     display: none;
 }
-.youtubepage>.sides{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 10px;
+header>.icon2>.material-icons{
+    font-size: 30px;
 }
-.youtubepage>.sides>.leftside{
-    width: 17%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 15px;
-}
-.youtubepage>.sides>.leftside:hover{
-    width: 17%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-.youtubepage>.sides>.leftside>.channels{
-    margin-top: 100px;
-}
-.youtubepage>.sides>.leftside>.channels>.home>ul>li{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 15px;
-    line-height: 45px;
-}
-.youtubepage>.sides>.leftside>.channels>.home>ul>li>.links>.material-symbols-outlined{
-    font-size: 20px;
-}
-.youtubepage>.sides>.leftside>.channels>.home>ul>li>a{
-    text-decoration:none;
-    color: black;
-    font-family: "Roboto","Arial",sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-}
-.youtubepage>.sides>.leftside>.channels>.home>ul>li:hover{
-    background-color: rgb(228, 228, 228);
-}
-.youtubepage>.sides>.leftside>.channels>.home>ul>li{
-    transition-property: all;
-    transition-duration: 0.50s;
-    cursor: pointer;
-}
-.youtubepage>.sides>.leftside>.channels>.historyy>ul>li{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 15px;
-    line-height: 45px;
-}
-.youtubepage>.sides>.leftside>.channels>.historyy>ul>li:hover{
-    background-color: rgb(228, 228, 228);
-}
-.youtubepage>.sides>.leftside>.channels>.historyy>ul>li{
-    transition-property: all;
-    transition-duration: 0.50s;
-    cursor: pointer;
-}
-.youtubepage>.sides>.leftside>.channels>.historyy>ul>li>.links>.img{
-    height: 40px;
-    width: 40px;
+header>.icon2>.mailicon{
+    background-color: green;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
 }
-.youtubepage>.sides>.leftside>.channels>.historyy>ul>li>p{
-    font-size: 14px;
-    font-family: "Roboto","Arial",sans-serif;
-    text-overflow: clip;
-    overflow: hidden;
-    white-space: nowrap;
-}
-.youtubepage>.sides>.leftside>.channels>.historyy>ul>li>.links>.material-symbols-outlined{
-    font-size: 20px;
-}
-.kesfet{
-    font-size: 14px;
-    font-family: "Roboto","Arial",sans-serif;
-}
-.youtubepremium{
-    width: 50px;
-}
-.youtubeicon{
-    width: 30px;
-    margin-right: 20px;
-}
-.youtubekids{
-    width: 60px;
-}
-.youtubepage>.sides>.leftside>.channels>.reklam>.hakkinda{
-    line-height: 20px;
-    margin-top: 15px;
-    font-size: 14px;
-    font-family: "Roboto","Arial",sans-serif;
-}
-.youtubepage>.sides>.leftside>.channels>.reklam>.LLC{
-    line-height: 20px;
-    margin-top: 15px;
-    color: rgb(144, 144, 144);
-    font-size: 14px;
-    font-family: "Roboto","Arial",sans-serif;
-}
-.youtubepage>.sides>.rightside{
-    width: 85%;
-}
-.youtubepage>.sides>.rightside>.navbar{
-    margin-top: 80px;
-    /* max-width: 1400px; */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 31px;
-    background-color: white;
+.leftside{
+    height: 100%;
+    width: 250px;
+    min-width: 250px;
     position: fixed;
-    margin-bottom: 10px;
+    background-color: white;
+    left: 0;
+    top: 60px;
+    padding-right: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-.youtubepage>.sides>.rightside>.navbar>button{
-    color: black;
+.leftside>.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.leftside>.navbar>.navbar-link.home{
+    background-color: #efefef;
+}
+.leftside>.navbar>.navbar-link{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 12px 25px;
+}
+.leftside>.navbar>.navbar-link>img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.leftside>.navbar>.navbar-link.LLC{
+    color: rgb(144, 144, 144);
+}
+.leftside>.navbar>.navbar-link:hover{
+    background-color: rgb(228, 228, 228);
+}
+.leftside>.navbar>.navbar-link{
+    transition-property: all;
+    transition-duration: 0.50s;
+    cursor: pointer;
+}
+.leftside>.navbar1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.leftside>.navbar1>.navbar1-link{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 12px 25px;
+}
+.leftside>.navbar1>.navbar1-link>img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.leftside>.navbar1>.navbar1-link.LLC{
+    color: rgb(144, 144, 144);
+}
+.leftside>.navbar1>.navbar1-link:hover{
+    background-color: rgb(228, 228, 228);
+}
+.leftside>.navbar1>.navbar1-link{
+    transition-property: all;
+    transition-duration: 0.50s;
+    cursor: pointer;
+}
+.navbarm{
+    position: fixed;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+    height: 68px;
+    width: calc(100% - 250px);
+    top: 60px;
+    left: 250px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.navbarm>.links-all.active{
+    background-color: rgb(0, 21, 0);
+    color: white;
+}
+.navbarm>button{
+    color: black;   
     font-family: "Roboto","Arial",sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -231,43 +187,34 @@ body{
     text-overflow: clip;
     white-space: nowrap;
 }
-.youtubepage>.sides>.rightside>.navbar>button:hover{
+.navbarm>button:hover{
     background-color: rgb(228, 228, 228);
 }
-.youtubepage>.sides>.rightside>.navbar>button{
+.navbarm>button{
     transition-property: all;
     transition-duration: 0.50s; 
     cursor: pointer;
  }
-.youtubepage>.sides>.rightside>.navbar>.links{
-    overflow: hidden;
-    word-wrap: none;
-}
-.youtubepage>.sides>.rightside>.navbar>.links-all.active{
-    background-color: rgb(0, 21, 0);
-    color: white;
-}
-.youtubepage>.sides>.rightside>.mainpage{
-    margin-top: 130px;
-}
-.youtubepage>.sides>.rightside>.mainpage>.videosection{
+.videosection{
+    margin-left: 250px;
+    margin-top: 140px;
     display: grid;
     grid-template-columns: repeat(4, 22%);
     grid-gap: 20px 40px;
 }
-.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer{
+.videosection>.videocontainer{
     display: flex;
     flex-direction: column;
 }
-.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.title>.titleimage{
+.videosection>.videocontainer>.title>.titleimage{
     width: 100%;
 }
-.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom{
+.videosection>.videocontainer>.videobottom{
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
-.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom>.videodetail{
+.videosection>.videocontainer>.videobottom>.videodetail{
     width: 220px;
     margin-top: 10px;
     font-size: 14px;
@@ -277,75 +224,45 @@ a {
     text-decoration: none;
     color: black; 
 }
-.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom>.videodetail>.channelname{
+.videosection>.videocontainer>.videobottom>.videodetail>.channelname{
     display: block;
     font-size: 14px;
     color: darkgray;
     font-family: "Roboto","Arial",sans-serif;
 }
-.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom>.videodetail>.videoview{
+.videosection>.videocontainer>.videobottom>.videodetail>.videoview{
     font-size: 14px;
     color: darkgray;
     font-family: "Roboto","Arial",sans-serif;
 }
-.youtubepage>.sides>.rightside>.mainpage>.videosection>.videocontainer>.videobottom>.videoimg>a>.channelicon {
+.videosection>.videocontainer>.videobottom>.videoimg>a>.channelicon {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-top: 10px;
 }
 @media(max-width:1500px){
-    .youtubepage>header>.icons{
+    header{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 160px;
-        margin-top: 10px;
-    }
-}
-@media(max-width:1395px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 120px;
-        margin-top: 10px;
-    }
-    .youtubepage>.sides>.rightside{
-        width: 85%;
-    }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
-        display: grid;
-        grid-template-columns: repeat(4, 22%);
-        grid-gap: 20px 40px;
+        position: fixed;
+        top: 0%;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        width: 100%;
+        padding: 15px;
+        background-color: white;
     }
 }
 @media(max-width:1300px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 100px;
-        margin-top: 10px;
-    }
-    .youtubepage>header>.icons>.icon1{
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 20px;
-    }
-    .youtubepage>.sides>.rightside{
-        width: 85%;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+    header>.search>form>input{
         width: 500px;
         height: 40px;
         border: 1px solid darkgrey;
         border-radius: 18px;
         padding: 15px;
     }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+    header>.search>form>button{
         position: absolute;
         height: 40px;
         width: 90px;
@@ -354,211 +271,90 @@ a {
         left: 410px;
         border: 1px solid darkgrey;
     }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
-        display: grid;
-        grid-template-columns: repeat(4, 21%);
-        grid-gap: 20px 40px;
-    }
-}
-@media(max-width:1260px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 100px;
-        margin-top: 10px;
-    }
-    .youtubepage>header>.icons>.icon1{
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 10px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 420px;
-        height: 40px;
-        border: 1px solid darkgrey;
-        border-radius: 18px;
-        padding: 15px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
-        position: absolute;
-        height: 40px;
-        width: 90px;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        left: 330px;
-        border: 1px solid darkgrey;
-    }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
-        display: grid;
-        grid-template-columns: repeat(4, 20%);
-        grid-gap: 20px 40px;
-    }
-}
-@media(max-width:1200px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 100px;
-        margin-top: 10px;
-    }
-    .youtubepage>.sides>.leftside{
-        width: 10%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .youtubepage>.sides>.leftside>.channels>.home>ul>li{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        line-height: 30px;
-    }
-    hr{
-        display: none;
-    }
-    .youtubepage>.sides>.leftside>.channels>.historyy{
-        display: none;
-    }
-    .youtubepage>.sides>.leftside>.channels>.reklam{
-        display: none;
-    }
-    .youtubepage>.sides>.rightside{
-        width: 85%;
-    }
-   .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 380px;
-        height: 40px;
-        border: 1px solid darkgrey;
-        border-radius: 18px;
-        padding: 15px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
-        position: absolute;
-        height: 40px;
-        width: 90px;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        left: 290px;
-        border: 1px solid darkgrey;
-    }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
-        display: grid;
-        grid-template-columns: repeat(4, 19%);
-        grid-gap: 20px 40px;
-    }
-}
-@media(max-width:1150px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 100px;
-        margin-top: 10px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 340px;
-        height: 40px;
-        border: 1px solid darkgrey;
-        border-radius: 18px;
-        padding: 15px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
-        position: absolute;
-        height: 40px;
-        width: 90px;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        left: 250px;
-        border: 1px solid darkgrey;
-    }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
+    .videosection{
+        margin-left: 250px;
+        margin-top: 140px;
         display: grid;
         grid-template-columns: repeat(3, 30%);
         grid-gap: 20px 40px;
     }
 }
-@media(max-width:1050px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 100px;
-        margin-top: 10px;
+@media(max-width:1200px){
+    .leftside{
+        height: 100%;
+        width: 150px;
+        min-width: 150px;
+        position: fixed;
+        background-color: white;
+        left: 0;
+        top: 60px;
+        padding-right: 10px;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 320px;
+    .leftside>.navbar>.navbar-link{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    hr{
+        display: none;
+    }
+    .leftside>.navbar1{
+        display: none;
+    }
+    .videosection{
+        margin-left: 150px;
+        margin-top: 140px;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        grid-gap: 20px 40px;
+    }
+    .navbarm{
+        position: fixed;
+        background-color: white;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 0 20px;
+        height: 68px;
+        width: calc(100% - 150px);
+        top: 60px;
+        left: 150px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+}
+    
+@media(max-width:1100px){
+    header>.search>form>input{
+        width: 350px;
         height: 40px;
         border: 1px solid darkgrey;
         border-radius: 18px;
         padding: 15px;
     }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+    header>.search>form>button{
         position: absolute;
         height: 40px;
         width: 90px;
         border-top-right-radius: 18px;
         border-bottom-right-radius: 18px;
-        left: 230px;
+        left: 270px;
         border: 1px solid darkgrey;
     }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
-        display: grid;
-        grid-template-columns: repeat(3, 31%);
-        grid-gap: 20px 40px;
-    }
 }
-@media(max-width:992px){    
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 90px;
-        margin-top: 10px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 290px;
+@media(max-width:950px){
+    header>.search>form>input{
+        width: 250px;
         height: 40px;
         border: 1px solid darkgrey;
         border-radius: 18px;
         padding: 15px;
     }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
-        position: absolute;
-        height: 40px;
-        width: 90px;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        left: 200px;
-        border: 1px solid darkgrey;
-    }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
-        display: grid;
-        grid-template-columns: repeat(3, 31%);
-        grid-gap: 20px 40px;
-    }
-}
-@media(max-width:912px){ 
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 70px;
-        margin-top: 10px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 260px;
-        height: 40px;
-        border: 1px solid darkgrey;
-        border-radius: 18px;
-        padding: 15px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+    header>.search>form>button{
         position: absolute;
         height: 40px;
         width: 90px;
@@ -567,96 +363,63 @@ a {
         left: 170px;
         border: 1px solid darkgrey;
     }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
-        display: grid;
-        grid-template-columns: repeat(3, 31%);
-        grid-gap: 20px 40px;
-    }
-}
-@media(max-width:840px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px;
-        margin-top: 10px;
-    }
-     .youtubepage>.sides>.leftside>.channels{
-        display: none;
-     }  
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
-        width: 200px;
-        height: 40px;
-        border: 1px solid darkgrey;
-        border-radius: 18px;
-        padding: 15px;
-    }
-    .youtubepage>.sides>.rightside>header>.icons>.icon2>.inputsearch>.button{
-        position: absolute;
-        height: 40px;
-        width: 90px;
-        border-top-right-radius: 18px;
-        border-bottom-right-radius: 18px;
-        left: 110px;
-        border: 1px solid darkgrey;
-    }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
-        display: grid;
-        grid-template-columns: repeat(2, 40%);
-        grid-gap: 20px 40px;
-    }
-}
-@media(max-width:710px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 100px;
-        margin-top: 10px;
-    }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.input{
+    .leftside{
         display: none;
     }
-    .youtubepage>header>.icons>.icon2>.inputsearch>.button{
+    .videosection{
+        margin-left: 20px;
+        margin-top: 140px;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        grid-gap: 20px 40px;
+    }
+    .navbarm{
+        position: fixed;
+        background-color: white;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 0 20px;
+        height: 68px;
+        width: calc(100% - 20px);
+        top: 60px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+}
+@media(max-width:830px){    
+    header>.search>form>input{
+        display: none;
+    }
+    header>.search>form>button{
         display: none;
     }
     #mic{
         display: none;
     }
-    .youtubepage>header>.icons>.icon1>.inputsearch>.button>.material-symbols-outlined{
-        font-size: 25px;
+    header>.icon2>#search{
+        font-size: 30px;
     }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
+    .videosection{
+        margin-left: 20px;
+        margin-top: 140px;
         display: grid;
-        grid-template-columns: repeat(2, 35%);
+        grid-template-columns: repeat(2, 48%);
         grid-gap: 20px 40px;
     }
 }
-@media(max-width:580px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 70px;
-        margin-top: 10px;
-    }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
+@media(max-width:560px){ 
+    .videosection{
+        margin-left: 20px;
+        margin-top: 140px;
         display: grid;
-        grid-template-columns: repeat(2, 40%);
+        grid-template-columns: repeat(1, 90%);
         grid-gap: 20px 40px;
-    }
+    }   
 }
-@media(max-width:530px){
-    .youtubepage>header>.icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 40px;
-        margin-top: 10px;
-    }
-    .youtubepage>.sides>.rightside>.mainpage>.videosection{
-        display: grid;
-        grid-template-columns: repeat(1, 70%);
-        grid-gap: 20px 40px;
-    }
-}
+
+
+
