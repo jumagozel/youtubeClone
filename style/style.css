@@ -64,15 +64,15 @@ header>.search>form>button{
     align-items: center;
     font-size: 32px;
 }
+#search{
+    display: none;
+}
 header>.icon2{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     gap: 15px;
     margin-top:10px;
-}
-header>.icon2>#search{
-    display: none;
 }
 header>.icon2>.material-icons{
     font-size: 30px;
@@ -399,6 +399,12 @@ a {
     }
     #mic{
         display: none;
+    }
+    #search{
+        display: inline;
+        text-align: center;
+        align-items: center;
+        font-size: 32px;
     }
     header>.icon2>#search{
         font-size: 30px;
